@@ -72,12 +72,43 @@ const createClient = async (req, res) => {
       date_of_birth,
       createdAt,
     ]);
-    let getNewClient = await pool.query(queries.getNewClient, [email]);
-    getNewClient = getNewClient.rows;
+    const getNewClient = await pool.query(queries.getNewClient, [email]);
+    // return res.render('../views/auth/login.ejs');
 
+    getNewClient = getNewClient.rows;
     return res.status(201).json({
       message: 'Client successfully created!',
       getNewClient,
+    });
+  } catch (error) {
+    return res.status(500).json({ message: error.message });
+  }
+};
+
+const updatePassword = async (req, res) => {
+  let {
+    email,
+    password,
+  } = req.body;
+  try {
+    const findClient = await pool.query(queries.getNewClient, [email]);
+    const ClientFound = findClient.rows;
+    const ClientItems = ClientFound.find((item) => item);
+
+    password = password || ClientItems.password;
+
+    if (findClient.rowCount === 0) {
+      return res.status(404).json({
+        message: 'It was not possible to find this Client',
+        details: 'Not found',
+      });
+    }
+
+    await pool.query(queries.updatePassword, [
+      password, email,
+    ]);
+    return res.status(200).json({
+      message: 'Client successfully updated!',
     });
   } catch (error) {
     return res.status(500).json({ message: error.message });
@@ -104,7 +135,7 @@ const updateClient = async (req, res) => {
 
       if (checkIfUsernameExists.rowCount) {
         return res.status(409).json({
-          message: 'The registration of a new Client have failed',
+          message: 'The  Client update have failed',
           details: 'Conflict',
         });
       }
@@ -117,11 +148,12 @@ const updateClient = async (req, res) => {
 
       if (checkIfEmailExists.rowCount) {
         return res.status(409).json({
-          message: 'The registration of a new Client have failed',
+          message: 'The Client update have failed',
           details: 'Conflict',
         });
       }
     }
+
     const findClient = await pool.query(queries.getClientById, [id]);
     const ClientFound = findClient.rows;
     const ClientItems = ClientFound.find((item) => item);
@@ -181,6 +213,7 @@ module.exports = {
   getClients,
   getClientById,
   createClient,
+  updatePassword,
   updateClient,
   deleteClient,
 };

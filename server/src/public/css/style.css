@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+.red {
+  border: 1px solid red;
+}
+
+.green {
+  border: 1px solid green;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+
+
+.container {
+  margin: 0 20px;
+}
+
+.header {
+  height: 600px;
+  border-bottom: 2px solid #ccc;
+}
+.header .top-nav {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.header .top-nav .logo {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.header .top-nav .logo img {
+  margin-left: 20px;
+  height: 70%;
+}
+.header .top-nav .logo i {
+  margin-top: 5px;
+  font-size: 28px;
+  opacity: 0.5;
+}
+
+.for-users {
+  border-radius: 3px;
+  position: absolute;
+  border: 1px solid transparent;
+  background-color: transparent;
+  display: none;
+  top: 27px;
+  left: 15px;
+  padding: 12px 16px;
+  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #6e4e4efb
+}
+
+.for-users:hover .dropdown-content {
+  display: block;
+}
+
+.header .top-nav .intro {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+}
+.header .top-nav .intro .intro-icon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.header .top-nav .intro .intro-icon h3 {
+  margin: 0;
+  font-size: 15px;
+}
+.header .top-nav .intro .intro-icon span {
+  padding-top: 5px;
+  font-size: 12px;
+  display: block;
+}
+.header .top-nav .support {
+  width: 20%;
+  padding-top: 25px;
+}
+.header .top-nav .support i {
+  padding-right: 5px;
+}
+.header .image-nav {
+  height: 400px;
+  margin: 0 -20px;
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .image-nav .title-image {
+  font-size: 50px;
+  margin: 40px 0;
+  font-weight: bolder;
+  color: rgb(29, 28, 28);
+  font-style: initial;
+  -webkit-text-stroke: 1px rgb(185, 185, 185);
+}
+.header .image-nav .btn-search {
+  border-radius: 25px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 0 1em #cecece;
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+}
+.header .image-nav .btn-search .input-search {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: white;
+  padding-left: 10px;
+}
+.header .bottom-nav {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.header .bottom-nav .bottom-item {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+}
+.header .bottom-nav .bottom-item span {
+  padding-top: 5px;
+  display: block;
+}
+.header .bottom-nav .bottom-item i {
+  color: #59c1a9;
+}
+
+.popular-specialty,
+.hairdresser-salon,
+.professionals,
+.handbook {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #ccc;
+}
+.popular-specialty .title-section,
+.hairdresser-salon .title-section,
+.professionals .title-section,
+.handbook .title-section {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.popular-specialty .title-section .span-title,
+.hairdresser-salon .title-section .span-title,
+.professionals .title-section .span-title,
+.handbook .title-section .span-title {
+  width: 20%;
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+}
+.popular-specialty .title-section .btn-view,
+.hairdresser-salon .title-section .btn-view,
+.professionals .title-section .btn-view,
+.handbook .title-section .btn-view {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+.popular-specialty .title-section .btn-view a,
+.hairdresser-salon .title-section .btn-view a,
+.professionals .title-section .btn-view a,
+.handbook .title-section .btn-view a {
+  border-radius: 15px;
+  font-weight: bolder;
+  color:rgb(185, 185, 185);
+  box-shadow: 0 0 1em #755d5d;
+  background-color: rgb(99, 89, 89);
+  height: fit-content;
+  padding: 10px;
+}
+.popular-specialty .title-section .btn-view a:hover,
+.hairdresser-salon .title-section .btn-view a:hover,
+.professionals .title-section .btn-view a:hover,
+.handbook .title-section .btn-view a:hover {
+  border: 1px solid #6e4e4efb;
+  background-color: #6e4e4efb;
+}
+.popular-specialty .title-section .btn-view a span,
+.hairdresser-salon .title-section .btn-view a span,
+.professionals .title-section .btn-view a span,
+.handbook .title-section .btn-view a span {
+  width: 100%;
+  padding: 5px;
+  color:rgb(185, 185, 185);
+}
+.popular-specialty .title-section .btn-view a span:hover,
+.hairdresser-salon .title-section .btn-view a span:hover,
+.professionals .title-section .btn-view a span:hover,
+.handbook .title-section .btn-view a span:hover {
+  color: white;
+}
+.popular-specialty .slide,
+.hairdresser-salon .slide,
+.professionals .slide,
+.handbook .slide {
+  height: 300px;
+}
+.popular-specialty .slide .my-slick-slide,
+.hairdresser-salon .slide .my-slick-slide,
+.professionals .slide .my-slick-slide,
+.handbook .slide .my-slick-slide {
+  height: 100%;
+  width: 100%;
+}
+.popular-specialty .slide .my-slick-slide .div-slide,
+.hairdresser-salon .slide .my-slick-slide .div-slide,
+.professionals .slide .my-slick-slide .div-slide,
+.handbook .slide .my-slick-slide .div-slide {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+.popular-specialty .slide .my-slick-slide .div-slide .service .image-slide,
+.hairdresser-salon .slide .my-slick-slide .div-slide .salon .image-slide,
+.professionals .slide .my-slick-slide .div-slide .image-slide,
+.handbook .slide .my-slick-slide .div-slide .image-slide {
+  height: 200px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 325px 200px;
+}
+
+.popular-specialty .slide .my-slick-slide .div-slide .div-title,
+.hairdresser-salon .slide .my-slick-slide .div-slide .div-title,
+.professionals .slide .my-slick-slide .div-slide .div-title,
+.handbook .slide .my-slick-slide .div-slide .div-title {
+  background-color: #f5efef;
+}
+.popular-specialty .slide .my-slick-slide .div-slide .div-title span,
+.hairdresser-salon .slide .my-slick-slide .div-slide .div-title span,
+.professionals .slide .my-slick-slide .div-slide .div-title span,
+.handbook .slide .my-slick-slide .div-slide .div-title span {
+  display: block;
+  text-align:center;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 15px;
+}
+.popular-specialty .slide .arrow-left,
+.hairdresser-salon .slide .arrow-left,
+.professionals .slide .arrow-left,
+.handbook .slide .arrow-left {
+  border: 1px solid #ccc;
+  font-size: 30px;
+  padding: 15px;
+  color: #ccc;
+  position: absolute;
+  bottom: 50%;
+  left: -15px;
+  background-color: white;
+  z-index: 1000;
+  cursor: pointer;
+}
+.popular-specialty .slide .arrow-right,
+.hairdresser-salon .slide .arrow-right,
+.professionals .slide .arrow-right,
+.handbook .slide .arrow-right {
+  border: 1px solid #ccc;
+  font-size: 30px;
+  padding: 15px;
+  color: #ccc;
+  position: absolute;
+  bottom: 50%;
+  right: -15px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.professionals .slide .my-slick-slide .div-slide {
+  display: flex;
+  flex-direction: column;
+  background-color: #e8e8e8;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.professionals .slide .my-slick-slide .div-slide:hover {
+  background-color: #f1ee90;
+}
+.professionals .slide .my-slick-slide .div-slide img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.professionals .slide .my-slick-slide .div-slide .info-professional {
+  text-align: center;
+}
+.professionals .slide .my-slick-slide .div-slide .info-professional .name {
+  display: block;
+  font-weight: 600;
+  padding-top: 5px;
+}
+.professionals .slide .my-slick-slide .div-slide .info-professional .speciality {
+  display: block;
+  padding-top: 5px;
+}
+.professionals .slide .my-slick-slide .div-slide .count-booking {
+  text-align: center;
+  color: #59c1a9;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.handbook .slide {
+  height: 300px;
+}
+.handbook .slide .handbook-slide {
+  height: 100%;
+  width: 100%;
+}
+.handbook .slide .handbook-slide .div-slide {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+}
+.handbook .slide .handbook-slide .div-slide img {
+  height: 200px;
+  width: 300px;
+}
+.handbook .slide .handbook-slide .div-slide .info-post {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.handbook .slide .handbook-slide .div-slide .info-post .title-post {
+  font-weight: 600;
+}
+.handbook .slide .handbook-slide .div-slide .info-post .summary-content {
+  margin-top: 15px;
+  text-align: justify;
+}
+
+.contact {
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #e8e8e8;
+}
+.contact .left-side {
+  width: 50%;
+  padding-left: 20px;
+}
+.contact .left-side .title {
+  display: block;
+  font-size: 40px;
+  margin-top: 30px;
+}
+.contact .left-side .second-title {
+  margin-top: 30px;
+  font-size: 25px;
+  display: block;
+}
+.contact .left-side .third-title {
+  margin-top: 10px;
+  font-size: 25px;
+  display: block;
+}
+.contact .left-side a {
+  display: block;
+  width: fit-content;
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bolder;
+  color:rgb(185, 185, 185);
+  box-shadow: 0 0 1em #755d5d;
+  background-color: rgb(99, 89, 89);
+}
+.contact .left-side a:hover {
+  padding: 12px;
+  color:rgb(185, 185, 185);
+  color: white;
+  border: 1px solid #6e4e4efb;
+  background-color: #6e4e4efb;
+}
+.contact .left-side a span {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.contact .right-side {
+  width: 50%;
+  margin: auto;
+}
+
+footer {
+  margin: 0 -20px;
+  height: 50px;
+  text-align: center;
+  background-color: #cccccc;
+  font-weight: bolder;
+}
+footer span {
+  display: block;
+  padding-top: 10px;
+}
+
+.auto-resizable-iframe {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.auto-resizable-iframe > div {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+}
+
+.auto-resizable-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,406 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hair Care Salon</title>
+    <link rel="icon" href="/images/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/slick-slide.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </head>
+  <script>
+    $(document).mouseup(function (e) {
+      const container = $('.for-users');
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        container.hide();
+      }
+    });
+
+    $(document).ready(function (e) {
+      $('#logoIcon').on('click', function (e) {
+        $('.for-users').css('display', 'flex');
+      });
+    });
+  </script>
+  <body>
+    <div class="container">
+      <section class="header">
+        <div class="top-nav">
+          <div class="logo">
+            <i class="fas fa-bars logo-icon" id="logoIcon"></i>
+            <img src="/images/logo-website.png" alt="logo-website" />
+            <div class="for-users">
+              <div class="dropdown-content">
+                <a href="/client/signup">Sign Up</a>
+                <a href="/client/login">Login</a>
+                <a href="/admin">Area Restrita</a>
+              </div>
+            </div>
+          </div>
+          <div class="intro">
+            <div class="intro-icon">
+              <h3 class="title">Especialidades</h3>
+              <span>Conheça nossos serviços</span>
+            </div>
+            <div class="intro-icon">
+              <h3 class="title">Unidades</h3>
+              <span>Conheça nossas unidades</span>
+            </div>
+            <div class="intro-icon">
+              <h3 class="title">Profissionais</h3>
+              <span>Conheça nossa equipe</span>
+            </div>
+            <div class="intro-icon">
+              <h3 class="title">Pacotes</h3>
+              <span>Conheça nossos pacotes</span>
+            </div>
+          </div>
+          <div class="support">
+            <span><i class="fas fa-question-circle"></i>Support</span>
+          </div>
+        </div>
+
+        <div class="image-nav">
+          <div class="title-image">HAIR CARE SALON</div>
+          <div class="btn-search">
+            <i class="fas fa-search"></i>
+            <input
+              class="input-search"
+              type="text"
+              name="btnSearch"
+              placeholder="Pesquise aqui..."
+            />
+          </div>
+        </div>
+        <div class="bottom-nav">
+          <div class="bottom-item">
+            <i class="fas fa-check"></i>
+            <span>Garantia de Qualidade</span>
+          </div>
+          <div class="bottom-item">
+            <i class="far fa-star"></i>
+            <span>Avaliação 5 Estrelas</span>
+          </div>
+          <div class="bottom-item">
+            <i class="fas fa-user-tie"></i>
+            <span>Profissionais Certificados</span>
+          </div>
+          <div class="bottom-item">
+            <i class="far fa-clock"></i>
+            <span>Agendamento Flexível</span>
+          </div>
+        </div>
+      </section>
+      <section class="popular-specialty">
+        <div class="title-section">
+          <span class="span-title">Especialidades em Alta:</span>
+          <div class="btn-view">
+            <a class="" href="/"> <span>Todos Serviços</span></a>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="my-slick-slide">
+            <div class="div-slide">
+              <img
+                class="service"
+                src="../images/speciality/color1.jpg"
+                alt="image-professional"
+              />
+              <div class="image-slide"></div>
+              <div class="div-title">
+                <span>Coloração Artística</span>
+              </div>
+            </div>
+            <div class="div-slide">
+              <img
+                class="service"
+                src="../images/speciality/box1.webp"
+                alt="image-professional"
+              />
+              <div class="image-slide"></div>
+              <div class="div-title">
+                <span>Box Braids</span>
+              </div>
+            </div>
+            <div class="div-slide">
+              <img
+                class="service"
+                src="../images/speciality/bob1.jpg"
+                alt="image-professional"
+              />
+              <div class="image-slide"></div>
+              <div class="div-title">
+                <span>Short Bob</span>
+              </div>
+            </div>
+            <div class="div-slide">
+              <img
+                class="service"
+                src="../images/speciality/nail1.jpg"
+                alt="image-professional"
+              />
+              <div class="image-slide"></div>
+              <div class="div-title">
+                <span>Alongamento de Unha</span>
+              </div>
+            </div>
+            <div class="div-slide">
+              <img
+                class="service"
+                src="../images/speciality/brow1.jpg"
+                alt="image-professional"
+              />
+              <div class="image-slide"></div>
+              <div class="div-title">
+                <span>Sobrancelha Definitiva</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hairdresser-salon">
+        <div class="title-section">
+          <span class="span-title">Hair Care Salon - Unidades </span>
+          <div class="btn-view">
+            <a class="" href="/"> <span>Todas Unidades </span></a>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="my-slick-slide">
+            <div class="div-slide">
+              <img
+                class="salon"
+                src="../images/speciality/salon1.jpg"
+                alt="image-professional"
+              />
+              <div class="image-slide"></div>
+              <div class="div-title">
+                <span>Unidade 1 - Jacareí - SP</span>
+              </div>
+            </div>
+            <div class="div-slide">
+              <img
+                class="salon"
+                src="../images/speciality/salon2.jpg"
+                alt="image-professional"
+              />
+              <div class="image-slide"></div>
+              <div class="div-title">
+                <span>Unidade 1 - São Paulo - SP</span>
+              </div>
+            </div>
+            <div class="div-slide">
+              <img
+                class="salon"
+                src="../images/speciality/salon3.jpg"
+                alt="image-professional"
+              />
+              <div class="image-slide"></div>
+              <div class="div-title">
+                <span>Unidade 2 - São Paulo - SP</span>
+              </div>
+            </div>
+            <div class="div-slide">
+              <img
+                class="salon"
+                src="../images/speciality/salon4.jpg"
+                alt="image-professional"
+              />
+              <div class="image-slide"></div>
+              <div class="div-title">
+                <span>Unidade 1 - São José - SP</span>
+              </div>
+            </div>
+            <div class="div-slide">
+              <img
+                class="salon"
+                src="../images/speciality/salon5.jpg"
+                alt="image-professional"
+              />
+              <div class="image-slide"></div>
+              <div class="div-title">
+                <span>Unidade 1 - Rezende - RJ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="professionals">
+        <div class="title-section">
+          <span class="span-title">Profissionais de Destaque</span>
+          <div class="btn-view">
+            <a class="" href="/"> <span>Todos Profissionais </span></a>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="my-slick-slide">
+            <div class="div-slide">
+              <img
+                src="../images/speciality/felipecarneiro.jpg"
+                alt="image-professional"
+              />
+              <div class="info-professional">
+                <span class="name">Felipe Carneiro</span>
+                <span class="speciality">Design de Sobrancelha</span>
+              </div>
+              <span class="count-booking">1.700 Agendamentos</span>
+            </div>
+            <div class="div-slide">
+              <img
+                src="../images/speciality/marinacelestino.jpg"
+                alt="image-professional"
+              />
+              <div class="info-professional">
+                <span class="name">Marina Celestino</span>
+                <span class="speciality">Coloração</span>
+              </div>
+              <span class="count-booking">1.030 Agendamentos</span>
+            </div>
+            <div class="div-slide">
+              <img
+                src="../images/speciality/ligiasilva.jpg"
+                alt="image-professional"
+              />
+              <div class="info-professional">
+                <span class="name">Lígia da Silva</span>
+                <span class="speciality">Penteados</span>
+              </div>
+              <span class="count-booking">1.850 Agendamentos</span>
+            </div>
+            <div class="div-slide">
+              <img
+                src="../images/speciality/alexafortes.jpg"
+                alt="image-professional"
+              />
+              <div class="info-professional">
+                <span class="name">Alexa Fortes</span>
+                <span class="speciality">Nail Design</span>
+              </div>
+              <span class="count-booking">1.200 Agendamentos</span>
+            </div>
+            <div class="div-slide">
+              <img
+                src="../images/speciality/brunamassuchini.jpg"
+                alt="image-professional"
+              />
+              <div class="info-professional">
+                <span class="name">Bruna Massuchini</span>
+                <span class="speciality">Cortes</span>
+              </div>
+              <span class="count-booking">2.504 Agendamentos</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="handbook">
+        <div class="title-section">
+          <span class="span-title">Blog</span>
+          <div class="btn-view">
+            <a class="" href="/"> <span>Todos Posts</span></a>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="handbook-slide">
+            <div class="div-slide">
+              <img src="../images/speciality/box.jpg" alt="image the post" />
+              <div class="info-post">
+                <span class="title-post">Como cuidar de suas box braids</span>
+                <div class="summary-content">
+                  Sempre me perguntam se “box braids estraga o cabelo?” e se
+                  “fazer box braids vai fazer o cabelo se quebrar”. A resposta
+                  para essas dúvidas é bem simples: como qualquer penteado, se
+                  você não cuidar, ele vai prejudicar a saúde do seu cabelo sim.
+                  Portanto, box braids só estragam o cabelo se você não cuidar
+                  direito.
+                </div>
+              </div>
+            </div>
+            <div class="div-slide">
+              <img src="../images/speciality/corte.webp" alt="image the post" />
+              <div class="info-post">
+                <span class="title-post"
+                  >Qual corte de cabelo combina com você</span
+                >
+                <div class="summary-content">
+                  Um novo corte de cabelo? É como uma nova vida! Bem, é claro
+                  que não é tão dramático, mas ainda assim: com um novo corte de
+                  sucesso, nós mulheres muitas vezes nos sentimos imediatamente
+                  mais felizes e mais poderosas. Mas também há o lado negativo.
+                  Ou seja, quando o novo penteado não combina com nosso estilo,
+                  não pode ser estilizado adequadamente ou mostra nosso rosto de
+                  maneira errada.
+                </div>
+              </div>
+            </div>
+            <div class="div-slide">
+              <img src="../images/speciality/free.webp" alt="image the post" />
+              <div class="info-post">
+                <span class="title-post">Cosméticos Cruelty-Free</span>
+                <div class="summary-content">
+                  Cruelty free, ao pé da letra, significa “livre de crueldade”,
+                  ou seja, diz respeito aos produtos que não utilizam animais
+                  como cobaias em testes laboratoriais. Já as maquiagens e
+                  cosméticos veganos também não realizam esse processo, além de
+                  descartar qualquer componente de origem animal na composição
+                  dos produtos.
+                </div>
+              </div>
+            </div>
+            <div class="div-slide">
+              <img src="../images/speciality/formol.jpg" alt="image the post" />
+              <div class="info-post">
+                <span class="title-post">Malefícios do Formol</span>
+                <div class="summary-content">
+                  Desde que as escovas de alisamento progressivo chegaram ao
+                  mercado, o formol passou a fazer parte do vocabulário dos
+                  salões de beleza. Se por um lado a substância ajuda a alisar
+                  os cabelos, ela pode ser muito prejudicial à saúde tanto do
+                  profissional quanto da cliente.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="left-side">
+          <span class="title">Para Profissionais</span>
+          <span class="second-title"
+            >Para saber mais sobre adquirir uma franquia,</span
+          >
+          <span class="third-title"
+            >fazer parte da equipe ou outras informações:</span
+          >
+          <a class="btn-contact"><span>Fale com Hair Care Salon Chain</span></a>
+        </div>
+        <div class="right-side auto-resizable-iframe">
+          <div>
+            <iframe
+              src="https://www.youtube.com/embed/JQizcFcA44U"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <span> Bruna Celestino</span>
+      </footer>
+    </div>
+  </body>
+</html>

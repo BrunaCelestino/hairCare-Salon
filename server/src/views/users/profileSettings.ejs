@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <link rel="icon" href="/images/icon.png" />
+  <link rel="stylesheet" href="/css/profile.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"
+/>
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"
+/>
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+/>
+
+</head>
+<body>
+  <form method="get" action="/client/profile/settings">
+  <div class="container rounded bg-white mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-3 border-right">
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://cdn.eutotal.com/imagens/image-1261.jpg"><span class="font-weight-bold">Fran Carneiro</span><span class="text-black-50">fran.ciellen@gmail.com</span><span> </span></div>
+        </div>
+        <div class="col-md-5 border-right">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="text-right">Configurações de Perfil</h4>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6"><label class="labels">Nome</label><input type="text" class="form-control" placeholder="Nome" value=""></div>
+                    <div class="col-md-6"><label class="labels">Sobrenome</label><input type="text" class="form-control" value="" placeholder="Sobrenome"></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12"><label class="labels">Telefone</label><input type="text" class="form-control" placeholder="digite seu telefone" value=""></div>
+                    <div class="col-md-12"><label class="labels">Endereço</label><input type="text" class="form-control" placeholder="digite seu endereço" value=""></div>
+                    <div class="col-md-12"><label class="labels">Bairro</label><input type="text" class="form-control" placeholder="digite seu bairro" value=""></div>
+                    <div class="col-md-12"><label class="labels">CEP</label><input type="text" class="form-control" placeholder="digite seu CEP" value=""></div>
+                    <div class="col-md-12"><label class="labels">Estado</label><input type="text" class="form-control" placeholder="digite seu estado" value=""></div>
+                    <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control" placeholder="digite seu email" value=""></div>
+    
+                </div>
+                <div class="mt-5 text-center">
+                  <a  class="btn btn-primary profile-button"href='/client/profile'>Salvar Perfil</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center experience"><span>Sobre mim</span><span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i>&nbsp;Editar</span></div><br>
+                <div class="col-md-12"><label class="labels">Bio</label><input type="text" class="form-control" placeholder="Bio" value=""></div> <br>
+                <div class="col-md-12"><label class="labels">Hobbies</label><input type="text" class="form-control" placeholder="Hobbies" value=""></div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center account"><span>Conta</span><span class="border px-3 p-1 add-account" ><a class="text-white  text-decoration-none" href="/home" >X</a> <i class="fa fa-plus"></i>&nbsp;Excluir</span></div><br>
+          </form>
+        </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>

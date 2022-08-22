@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign Up Page</title>
+    <link rel="icon" href="/images/icon.png" />
+    <link rel="stylesheet" href="/css/auth.css" />
+  </head>
+  <body>
+      <div class="container">
+          <h1>Crie uma nova conta</h1>
+          <form method="post" action="/client/signup">
+
+            <div class="group-input">
+              <input type="text" name="firstName" id="firstName" required>
+              <span></span>
+              <label for="firstName">Nome <span style="color: red">*</span></label>
+            </div>
+            <div class="group-input">
+              <input type="text" name="lastName" id="lastName" required>
+              <span></span>
+              <label for="lastName">Sobrenome <span style="color: red">*</span></label>
+            </div>
+            <div class="group-input">
+              <input type="email" name="email" id="email"  required>
+              <span></span>
+              <label for="email">E-mail <span style="color: red">*</span></label>
+            </div>
+            <div class="group-input">
+              <input type="password" name="password" id="password"  required/>
+              <span></span>
+              <label for="password">Senha <span style="color: red">*</span></label>
+            </div>
+            <div class="group-input">
+              <input
+                type="password"
+                name="confirmPassword"
+                id="confirmPassword"  required
+                />
+                <span></span>
+              <label for="confirmPassword">Confirmar Senha <span style="color: red">*</span></label>
+              </div>
+              <button class="signup__submit" type="submit">Sign Up</button>
+              <div class="signup_link">
+                Já é membro? <a href="/client/login">Login</a>
+                </div>
+
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

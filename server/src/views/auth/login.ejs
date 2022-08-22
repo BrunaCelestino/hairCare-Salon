@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login Page</title>
+    <link rel="icon" href="/images/icon.png" />
+    <link rel="stylesheet" href="/css/auth.css" />
+  </head>
+  <body>
+      <div class="container">
+        <h1>Login</h1>
+        <form method="get" action="/client/profile">
+            <div class="group-input">
+              <input type="email" name="email" id="email" required>
+              <span></span>
+              <label for="email">E-mail</label>
+            </div>
+            <div class="group-input">
+              <input type="password" name="password" id="password"  required/>
+              <span></span>
+              <label for="password">Senha</label>
+            </div>
+            <div>
+              <a class="forgot-password" href="/client/update/password">Esqueceu a senha?</a>
+            </div>
+              <button type="submit" href="/client/profile/">Login</button>
+              <div class="signup_link">
+              Ainda não é membro? <a href="/client/signup">Sign Up</a>
+              </div>
+        </div>
+      </form>
+    </div>
+  </body>
+
